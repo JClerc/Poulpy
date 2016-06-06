@@ -21,15 +21,22 @@
       "newtab": "pages/newtab.html"
     },
 
-   "manifest_version": 2,
-   "permissions": [
-     "tabs",
-     "webRequest",
-     "webRequestBlocking",
-     "*://*/",
-     "cookies",
-     "storage"
-   ],
+    "content_scripts": [
+      {
+        "matches": ["*://*/"],
+        "js": ["assets/js/navigate.js"]
+      }
+    ],
 
-   "version": "1.0.0"
+    "manifest_version": 2,
+    "permissions": [
+      "tabs",
+      "webRequest",
+      "webRequestBlocking",
+      "*://*/",
+      "cookies",
+      "storage"
+    ],
+
+    "version": "1.0.0"
 }
