@@ -17,6 +17,10 @@
     "128": "icon_128.png"
    },
 
+    "chrome_url_overrides" : {
+      "newtab": "newtab.html"
+    },
+
    "manifest_version": 2,
    "permissions": [
      "tabs",
