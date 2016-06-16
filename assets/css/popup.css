@@ -13,3 +13,21 @@ body {
     border-radius: 100%;
     background-color: white;
 }
+
+.round-accueil {
+    background-image: url(../../icons/home.png);
+    background-position:50% 50%;
+    background-repeat:no-repeat;
+}
+
+.round-mails {
+    background-image: url(../../icons/mails.png);
+    background-position:50% 50%;
+    background-repeat:no-repeat;
+}
+
+.round-meteo {
+    background-image: url(../../icons/meteo.png);
+    background-position:50% 50%;
+    background-repeat:no-repeat;
+}
