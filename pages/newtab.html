@@ -1,167 +1,160 @@
 <!doctype html>
-
 <html lang="fr">
 
-    <head>
-        <meta charset="utf-8">
-        <title>Poulpy</title>
-        <link href="../assets/libs/css/bulma.min.css" rel="stylesheet">
-        <link href="../assets/libs/css/font-awesome.min.css" rel="stylesheet">
-        <link href="../assets/css/newtab.css" rel="stylesheet">
-    </head>
+<head>
+    <meta charset="utf-8">
+    <title>Poulpy</title>
+    <link href="../assets/libs/css/bulma.min.css" rel="stylesheet">
+    <link href="../assets/libs/css/font-awesome.min.css" rel="stylesheet">
+    <link href="../assets/css/newtab.css" rel="stylesheet">
+</head>
 
-    <body>
+<body>
 
-        <section class="hero is-primary is-medium is-bold">
+    <section class="hero is-primary is-medium is-bold">
 
-          <div class="hero-head">
+        <div class="hero-head">
             <header class="nav">
-              <div class="container">
-                <div class="nav-left">
-                  <a class="nav-item">
-                    <img src="../icons/poulpy.png" alt="Logo">
-                  </a>
+                <div class="container">
+                    <div class="nav-left">
+                        <a class="nav-item">
+                            <img src="../icons/poulpy.png" alt="Logo">
+                        </a>
+                    </div>
+                    <span class="nav-toggle">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </span>
+                    <div class="nav-right nav-menu">
+                        <a class="nav-item is-active google-link">Google</a>
+                        <span class="nav-item">
+                            <a class="button is-primary is-inverted" href="https://jclerc.github.io/Poulpy/" target="_blank">
+                            <span class="icon is-small">
+                                <i class="fa fa-external-link"></i>
+                            </span>
+                            <span>Site officiel</span>
+                            </a>
+                        </span>
+                    </div>
                 </div>
-                <span class="nav-toggle">
-                  <span></span>
-                  <span></span>
-                  <span></span>
-                </span>
-                <div class="nav-right nav-menu">
-                  <a class="nav-item is-active google-link">
-                    Google
-                  </a>
-                  <span class="nav-item">
-                    <a class="button is-primary is-inverted" href="https://jclerc.github.io/Poulpy/" target="_blank">
-                      <span class="icon is-small">
-                        <i class="fa fa-external-link"></i>
-                      </span>
-                      <span>Site officiel</span>
-                    </a>
-                  </span>
-                </div>
-              </div>
             </header>
-          </div>
+        </div>
 
-          <div class="hero-body">
+        <div class="hero-body">
             <div class="container has-text-centered">
-              <h1 class="title">
-                Rechercher
-              </h1>
-              <form class="search-form">
-                <p class="control has-addons has-addons-centered">
-                  <input type="text" class="search-input input is-medium" required="required" placeholder="Votre recherche..">
-                  <button type="submit" class="button is-info is-medium">Go !</button>
-                </p>
+                <h1 class="title">Rechercher</h1>
+                <form class="search-form">
+                    <p class="control has-addons has-addons-centered">
+                        <input type="text" class="search-input input is-medium" required="required" placeholder="Votre recherche..">
+                        <button type="submit" class="button is-info is-medium">Go !</button>
+                    </p>
                 </form>
             </div>
-          </div>
+        </div>
 
-        </section>
+    </section>
 
-        <section class="container">
-            <div class="columns">
-                <div class="column">
-                    <a href="http://gmail.com" class="link-tile" target="_blank">
-                        <div class="tile is-parent">
-                            <article class="tile is-child notification is-danger">
-                                <article class="media">
-                                    <figure class="media-left">
-                                        <div class="image is-64x64">
-                                            <div class="round round-mails"></div>
-                                        </div>
-                                    </figure>
-                                    <div class="media-content">
+    <section class="container">
+        <div class="columns">
+            <div class="column">
+                <a href="http://gmail.com" class="link-tile" target="_blank">
+                    <div class="tile is-parent">
+                        <article class="tile is-child notification is-danger">
+                            <article class="media">
+                                <figure class="media-left">
+                                    <div class="image is-64x64">
+                                        <div class="round round-mails"></div>
+                                    </div>
+                                </figure>
+                                <div class="media-content">
+                                    <div class="content">
+                                        <div class="subtitle"><b>Emails</b></div>
                                         <div class="content">
-                                            <div class="subtitle"><b>Emails</b></div>
-                                            <div class="content">
-                                                <p class="mails">Vous n'avez pas de nouveau mail</p>
-                                            </div>
+                                            <p class="mails">Vous n'avez pas de nouveau mail</p>
                                         </div>
                                     </div>
-                                </article>
+                                </div>
                             </article>
-                        </div>
-                    </a>
-                    <form action="http://www.meteofrance.com/recherche/resultats" method="post" class="form-weather" target="_blank">
-                        <input type="hidden" name="facet" value="previsions">
-                        <input type="hidden" name="lieuId" value="">
-                        <input type="hidden" name="lieuType" value="">
-                        <input type="hidden" name="search-type" value="previsions">
-                        <input type="hidden" name="query" value="" class="input-city">
-                        <div class="tile is-parent">
-                            <article class="tile is-child notification is-info">
-                                <article class="media">
-                                    <figure class="media-left">
-                                        <div class="image is-64x64">
-                                            <div class="round round-meteo"></div>
-                                        </div>
-                                    </figure>
-                                    <div class="media-content">
+                        </article>
+                    </div>
+                </a>
+                <form action="http://www.meteofrance.com/recherche/resultats" method="post" class="form-weather" target="_blank">
+                    <input type="hidden" name="facet" value="previsions">
+                    <input type="hidden" name="lieuId" value="">
+                    <input type="hidden" name="lieuType" value="">
+                    <input type="hidden" name="search-type" value="previsions">
+                    <input type="hidden" name="query" value="" class="input-city">
+                    <div class="tile is-parent">
+                        <article class="tile is-child notification is-info">
+                            <article class="media">
+                                <figure class="media-left">
+                                    <div class="image is-64x64">
+                                        <div class="round round-meteo"></div>
+                                    </div>
+                                </figure>
+                                <div class="media-content">
+                                    <div class="content">
+                                        <div class="subtitle"><b class="place">Météo</b></div>
                                         <div class="content">
-                                            <div class="subtitle"><b class="place">Météo</b></div>
-                                            <div class="content">
-                                                <p class="meteo">Recherche en cours...</p>
-                                            </div>
+                                            <p class="meteo">Recherche en cours...</p>
                                         </div>
                                     </div>
-                                </article>
+                                </div>
                             </article>
-                        </div>
-                    </form>
-                </div>
-                <div class="column">
-                    <a href="https://news.google.fr/" class="link-tile" target="_blank">
-                        <div class="tile is-parent">
-                            <article class="tile is-child notification is-warning">
-                                <article class="media">
-                                    <figure class="media-left">
-                                        <div class="image is-64x64">
-                                            <div class="round round-news"></div>
-                                        </div>
-                                    </figure>
-                                    <div class="media-content">
-                                        <div class="content">
-                                            <div class="subtitle"><b>Actualités</b></div>
-                                            <div class="content">
-                                                <p>Cliquez ici pour voir les actualités récentes</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </article>
-                            </article>
-                        </div>
-                    </a>
-                    <a href="http://www.boursorama.com/" class="link-tile" target="_blank">
-                        <div class="tile is-parent">
-                            <article class="tile is-child notification is-success">
-                                <article class="media">
-                                    <figure class="media-left">
-                                        <div class="image is-64x64">
-                                            <div class="round round-bank"></div>
-                                        </div>
-                                    </figure>
-                                    <div class="media-content">
-                                        <div class="content">
-                                            <div class="subtitle"><b>Ma Banque</b></div>
-                                            <div class="content">
-                                                <p>Cliquez ici pour se rendre sur Boursorama</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </article>
-                            </article>
-                        </div>
-                    </a>
-                </div>
+                        </article>
+                    </div>
+                </form>
             </div>
-        </section>
+            <div class="column">
+                <a href="https://news.google.fr/" class="link-tile" target="_blank">
+                    <div class="tile is-parent">
+                        <article class="tile is-child notification is-warning">
+                            <article class="media">
+                                <figure class="media-left">
+                                    <div class="image is-64x64">
+                                        <div class="round round-news"></div>
+                                    </div>
+                                </figure>
+                                <div class="media-content">
+                                    <div class="content">
+                                        <div class="subtitle"><b>Actualités</b></div>
+                                        <div class="content">
+                                            <p>Cliquez ici pour voir les actualités récentes</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                        </article>
+                    </div>
+                </a>
+                <a href="http://www.boursorama.com/" class="link-tile" target="_blank">
+                    <div class="tile is-parent">
+                        <article class="tile is-child notification is-success">
+                            <article class="media">
+                                <figure class="media-left">
+                                    <div class="image is-64x64">
+                                        <div class="round round-bank"></div>
+                                    </div>
+                                </figure>
+                                <div class="media-content">
+                                    <div class="content">
+                                        <div class="subtitle"><b>Ma Banque</b></div>
+                                        <div class="content">
+                                            <p>Cliquez ici pour se rendre sur Boursorama</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                        </article>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
 
-        <script src="../assets/libs/js/jquery.min.js"></script>
-        <script src="../assets/js/newtab.js"></script>
-    </body>
+    <script src="../assets/libs/js/jquery.min.js"></script>
+    <script src="../assets/js/newtab.js"></script>
+</body>
 
 </html>
-
-

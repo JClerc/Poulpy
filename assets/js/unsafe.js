@@ -9,12 +9,12 @@ $('.go-back').on('click', function (e) {
 
 $('.go-continue').on('click', function (e) {
     chrome.storage.local.get('poulpy_unsafe', function (data) {
-       if (!data) data = {};
+        if (!data) data = {};
         chrome.storage.local.get('poulpy_unsafe_latest', function (url) {
-           data[url.poulpy_unsafe_latest] = false;
-           chrome.storage.local.set({'poulpy_unsafe': data}, function () {
-            history.go(-1);
-           });
+            data[url.poulpy_unsafe_latest] = false;
+            chrome.storage.local.set({'poulpy_unsafe': data}, function () {
+                history.go(-1);
+            });
         });
 
 

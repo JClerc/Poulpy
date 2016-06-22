@@ -27,10 +27,9 @@ setInterval((function loop() {
 
 })(), 30 * 1000);
 
-chrome.runtime.onMessage.addListener(
-  function(request, sender, sendResponse) {
+chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
     if (request.unsafe === true) {
-       var url = chrome.extension.getURL('pages/unsafe.html');
-       chrome.tabs.update({url: url});
+        var url = chrome.extension.getURL('pages/unsafe.html');
+        chrome.tabs.update({url: url});
     }
 });
