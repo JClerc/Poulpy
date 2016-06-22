@@ -1,15 +1,27 @@
 
 // This will get executed when clicking on icon
 
-var mails = 4;
+chrome.storage.local.get('poulpy_weather', function (data) {
+    // console.log(data);
+    var degree = data.poulpy_weather.main.temp - 273.15;
+    var place = data.poulpy_weather.name;
+    $(".meteo").html("Il fait actuellement " + ~~(degree * 10) / 10 + "°C");
+    $(".place").html(place);
+});
 
-var meteo = 150;
-$( ".meteo" ).html("Il fait actuellement " + meteo + "°C");
+chrome.storage.local.get('poulpy_mail', function (data) {
+    if (!data.poulpy_mail) return;
+    var mails = data.poulpy_mail;
+    if (mails === 0) {
+        $( ".mails" ).html("Vous n'avez pas de nouveau mail");
+    } else if (mails === 1) {
+        $( ".mails" ).html("Vous avez 1 nouveau mail");
+    } else {
+        $( ".mails" ).html("Vous avez " + mails + " nouveaux mails");
+    }
+});
 
-if (mails == 0) {
-    $( ".mails" ).html("Vous n'avez pas de nouveau mail");
-}else if (mails == 1){
-    $( ".mails" ).html("Vous avez 1 nouveau mail");
-}else{
-    $( ".mails" ).html("Vous avez " + mails + " nouveaux mails");
-}
+$('.link-home').on('click', function (e) {
+    chrome.tabs.create({});
+});
+

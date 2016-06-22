@@ -6,21 +6,20 @@
         <meta charset="utf-8">
         <title>Poulpy</title>
         <link href="../assets/libs/css/bulma.min.css" rel="stylesheet">
-        <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,300' rel='stylesheet' type='text/css'>
         <link href="../assets/libs/css/font-awesome.min.css" rel="stylesheet">
-        <link href="../assets/libs/css/newtab.css" rel="stylesheet">
+        <link href="../assets/css/newtab.css" rel="stylesheet">
     </head>
 
     <body>
 
         <section class="hero is-primary is-medium">
-          <!-- Hero header: will stick at the top -->
+
           <div class="hero-head">
             <header class="nav">
               <div class="container">
                 <div class="nav-left">
                   <a class="nav-item">
-                    <img src="images/bulma-white.png" alt="Logo">
+                    <img src="../icons/icon_128.png" alt="Logo">
                   </a>
                 </div>
                 <span class="nav-toggle">
@@ -29,21 +28,15 @@
                   <span></span>
                 </span>
                 <div class="nav-right nav-menu">
-                  <a class="nav-item is-active">
-                    Home
-                  </a>
-                  <a class="nav-item">
-                    Examples
-                  </a>
-                  <a class="nav-item">
-                    Documentation
+                  <a class="nav-item is-active google-link">
+                    Google
                   </a>
                   <span class="nav-item">
-                    <a class="button is-primary is-inverted">
-                      <span class="icon">
-                        <i class="fa fa-github"></i>
+                    <a class="button is-primary is-inverted" href="https://jclerc.github.io/Poulpy/" target="_blank">
+                      <span class="icon is-small">
+                        <i class="fa fa-external-link"></i>
                       </span>
-                      <span>Download</span>
+                      <span>Site officiel</span>
                     </a>
                   </span>
                 </div>
@@ -51,37 +44,69 @@
             </header>
           </div>
 
-          <!-- Hero content: will be in the middle -->
           <div class="hero-body">
             <div class="container has-text-centered">
               <h1 class="title">
-                Title
+                Rechercher
               </h1>
-              <h2 class="subtitle">
-                Subtitle
-              </h2>
+              <form class="search-form">
+                <p class="control has-addons has-addons-centered">
+                  <input type="text" class="search-input input is-medium" required="required" placeholder="Votre recherche..">
+                  <button type="submit" class="button is-info is-medium">Go !</button>
+                </p>
+                </form>
             </div>
           </div>
 
-          <!-- Hero footer: will stick at the bottom -->
-          <div class="hero-foot">
-            <nav class="tabs">
-              <div class="container">
-                <ul>
-                  <li class="is-active"><a>Overview</a></li>
-                  <li><a>Modifiers</a></li>
-                  <li><a>Grid</a></li>
-                  <li><a>Elements</a></li>
-                  <li><a>Components</a></li>
-                  <li><a>Layout</a></li>
-                </ul>
-              </div>
-            </nav>
-          </div>
         </section>
 
-        <script src="../assets/js/jquery-2.2.4.min.js"></script>
-        <script src="../assets/js/popup.js"></script>
+        <section class="container">
+            <a href="http://gmail.com" class="link-tile" target="_blank">
+                <div class="tile is-parent">
+                    <article class="tile is-child notification is-danger">
+                        <article class="media">
+                            <figure class="media-left">
+                                <div class="image is-64x64">
+                                    <div class="round round-mails"></div>
+                                </div>
+                            </figure>
+                            <div class="media-content">
+                                <div class="content">
+                                    <div class="subtitle"><b>Emails</b></div>
+                                    <div class="content">
+                                        <p class="mails">Vous n'avez pas de nouveau mail</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                    </article>
+                </div>
+            </a>
+            <a href="http://www.meteofrance.com/" class="link-tile" target="_blank">
+                <div class="tile is-parent">
+                    <article class="tile is-child notification is-info">
+                        <article class="media">
+                            <figure class="media-left">
+                                <div class="image is-64x64">
+                                    <div class="round round-meteo"></div>
+                                </div>
+                            </figure>
+                            <div class="media-content">
+                                <div class="content">
+                                    <div class="subtitle"><b class="place">Météo</b></div>
+                                    <div class="content">
+                                        <p class="meteo">Recherche en cours...</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                    </article>
+                </div>
+            </a>
+        </section>
+
+        <script src="../assets/libs/js/jquery.min.js"></script>
+        <script src="../assets/js/newtab.js"></script>
     </body>
 
 </html>
