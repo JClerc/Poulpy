@@ -24,7 +24,7 @@
     "content_scripts": [
       {
         "matches": ["*://*/"],
-        "js": ["assets/js/navigate.js"]
+        "js": ["assets/libs/js/jquery.min.js", "assets/js/navigate.js"]
       }
     ],
 
