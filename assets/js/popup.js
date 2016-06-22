@@ -2,7 +2,6 @@
 // This will get executed when clicking on icon
 
 chrome.storage.local.get('poulpy_weather', function (data) {
-    // console.log(data);
     var degree = data.poulpy_weather.main.temp - 273.15;
     var place = data.poulpy_weather.name;
     $(".meteo").html("Il fait actuellement " + ~~(degree * 10) / 10 + "°C");

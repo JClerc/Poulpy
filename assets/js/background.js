@@ -1,4 +1,6 @@
 
+// This will get executed on background
+
 setInterval((function loop() {
 
     $.ajax({
@@ -10,8 +12,6 @@ setInterval((function loop() {
     });
 
     navigator.geolocation.getCurrentPosition(function (position) {
-        // console.log("Latitude: " + position.coords.latitude);
-        // console.log("Longitude: " + position.coords.longitude); 
         $.ajax({
             url: "http://api.openweathermap.org/data/2.5/weather?lat=" + position.coords.latitude + "&lon=" + position.coords.longitude + "&appid=651e10753244afccb45c140b1dac2ef1",
             success: function (json) {
@@ -19,8 +19,6 @@ setInterval((function loop() {
                 chrome.storage.local.set({'poulpy_weather': json});
             }
         });
-    }, function (error) {
-        // console.log(error);
     });
 
     return loop;

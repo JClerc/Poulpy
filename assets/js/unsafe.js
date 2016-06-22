@@ -1,4 +1,6 @@
 
+// This will get executed when page is unsafe
+
 $('.link-home').on('click', function (e) {
     chrome.tabs.update({url:'chrome://newtab'});
 });
