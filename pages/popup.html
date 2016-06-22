@@ -53,7 +53,12 @@
             </article>
         </div>
     </a>
-    <a href="http://www.meteofrance.com/" class="link-tile" target="_blank">
+    <form action="http://www.meteofrance.com/recherche/resultats" method="post" class="form-weather" target="_blank">
+        <input type="hidden" name="facet" value="previsions">
+        <input type="hidden" name="lieuId" value="">
+        <input type="hidden" name="lieuType" value="">
+        <input type="hidden" name="search-type" value="previsions">
+        <input type="hidden" name="query" value="" class="input-city">
         <div class="tile is-parent">
             <article class="tile is-child notification is-info">
                 <article class="media">
@@ -73,7 +78,7 @@
                 </article>
             </article>
         </div>
-    </a>
+    </form>
     <script src="../assets/libs/js/jquery.min.js"></script>
     <script src="../assets/js/popup.js"></script>
 </body>

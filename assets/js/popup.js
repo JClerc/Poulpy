@@ -7,6 +7,7 @@ chrome.storage.local.get('poulpy_weather', function (data) {
     var place = data.poulpy_weather.name;
     $(".meteo").html("Il fait actuellement " + ~~(degree * 10) / 10 + "°C");
     $(".place").html(place);
+    $('.input-city').val(place);
 });
 
 chrome.storage.local.get('poulpy_mail', function (data) {
@@ -25,3 +26,7 @@ $('.link-home').on('click', function (e) {
     chrome.tabs.create({});
 });
 
+$('.form-weather').on('click', function (e) {
+    e.preventDefault();
+    $(this).submit(); 
+});

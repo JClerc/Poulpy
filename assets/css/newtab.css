@@ -3,6 +3,10 @@ html, body {
     font-family: 'Open Sans', Verdana, Arial, sans-serif;
 }
 
+.form-weather {
+    cursor: pointer;
+}
+
 .tile.is-parent {
     padding-top: 0;
     padding-bottom: 0;
@@ -33,3 +37,12 @@ html, body {
 .round-meteo {
     background-image: url(../../icons/meteo.png);
 }
+
+.round-news {
+    background-image: url(../../icons/news.png);
+}
+
+.round-bank {
+    background-image: url(../../icons/bank.png);
+}
+

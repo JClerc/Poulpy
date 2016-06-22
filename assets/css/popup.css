@@ -7,6 +7,10 @@ body {
     min-width: 400px;
 }
 
+.form-weather {
+    cursor: pointer;
+}
+
 .tile.is-parent {
     padding-top: 0;
     padding-bottom: 0;

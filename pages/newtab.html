@@ -61,48 +61,101 @@
         </section>
 
         <section class="container">
-            <a href="http://gmail.com" class="link-tile" target="_blank">
-                <div class="tile is-parent">
-                    <article class="tile is-child notification is-danger">
-                        <article class="media">
-                            <figure class="media-left">
-                                <div class="image is-64x64">
-                                    <div class="round round-mails"></div>
-                                </div>
-                            </figure>
-                            <div class="media-content">
-                                <div class="content">
-                                    <div class="subtitle"><b>Emails</b></div>
-                                    <div class="content">
-                                        <p class="mails">Vous n'avez pas de nouveau mail</p>
+            <div class="columns">
+                <div class="column">
+                    <a href="http://gmail.com" class="link-tile" target="_blank">
+                        <div class="tile is-parent">
+                            <article class="tile is-child notification is-danger">
+                                <article class="media">
+                                    <figure class="media-left">
+                                        <div class="image is-64x64">
+                                            <div class="round round-mails"></div>
+                                        </div>
+                                    </figure>
+                                    <div class="media-content">
+                                        <div class="content">
+                                            <div class="subtitle"><b>Emails</b></div>
+                                            <div class="content">
+                                                <p class="mails">Vous n'avez pas de nouveau mail</p>
+                                            </div>
+                                        </div>
                                     </div>
-                                </div>
-                            </div>
-                        </article>
-                    </article>
-                </div>
-            </a>
-            <a href="http://www.meteofrance.com/" class="link-tile" target="_blank">
-                <div class="tile is-parent">
-                    <article class="tile is-child notification is-info">
-                        <article class="media">
-                            <figure class="media-left">
-                                <div class="image is-64x64">
-                                    <div class="round round-meteo"></div>
-                                </div>
-                            </figure>
-                            <div class="media-content">
-                                <div class="content">
-                                    <div class="subtitle"><b class="place">Météo</b></div>
-                                    <div class="content">
-                                        <p class="meteo">Recherche en cours...</p>
+                                </article>
+                            </article>
+                        </div>
+                    </a>
+                    <form action="http://www.meteofrance.com/recherche/resultats" method="post" class="form-weather" target="_blank">
+                        <input type="hidden" name="facet" value="previsions">
+                        <input type="hidden" name="lieuId" value="">
+                        <input type="hidden" name="lieuType" value="">
+                        <input type="hidden" name="search-type" value="previsions">
+                        <input type="hidden" name="query" value="" class="input-city">
+                        <div class="tile is-parent">
+                            <article class="tile is-child notification is-info">
+                                <article class="media">
+                                    <figure class="media-left">
+                                        <div class="image is-64x64">
+                                            <div class="round round-meteo"></div>
+                                        </div>
+                                    </figure>
+                                    <div class="media-content">
+                                        <div class="content">
+                                            <div class="subtitle"><b class="place">Météo</b></div>
+                                            <div class="content">
+                                                <p class="meteo">Recherche en cours...</p>
+                                            </div>
+                                        </div>
                                     </div>
-                                </div>
-                            </div>
-                        </article>
-                    </article>
+                                </article>
+                            </article>
+                        </div>
+                    </form>
                 </div>
-            </a>
+                <div class="column">
+                    <a href="https://news.google.fr/" class="link-tile" target="_blank">
+                        <div class="tile is-parent">
+                            <article class="tile is-child notification is-warning">
+                                <article class="media">
+                                    <figure class="media-left">
+                                        <div class="image is-64x64">
+                                            <div class="round round-news"></div>
+                                        </div>
+                                    </figure>
+                                    <div class="media-content">
+                                        <div class="content">
+                                            <div class="subtitle"><b>Actualités</b></div>
+                                            <div class="content">
+                                                <p>Cliquez ici pour voir les actualités récentes</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </article>
+                            </article>
+                        </div>
+                    </a>
+                    <a href="http://www.boursorama.com/" class="link-tile" target="_blank">
+                        <div class="tile is-parent">
+                            <article class="tile is-child notification is-success">
+                                <article class="media">
+                                    <figure class="media-left">
+                                        <div class="image is-64x64">
+                                            <div class="round round-bank"></div>
+                                        </div>
+                                    </figure>
+                                    <div class="media-content">
+                                        <div class="content">
+                                            <div class="subtitle"><b>Ma Banque</b></div>
+                                            <div class="content">
+                                                <p>Cliquez ici pour se rendre sur Boursorama</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </article>
+                            </article>
+                        </div>
+                    </a>
+                </div>
+            </div>
         </section>
 
         <script src="../assets/libs/js/jquery.min.js"></script>
